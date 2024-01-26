@@ -2,7 +2,8 @@
 
 const blueCircle = document.querySelector('.blue-circle');
 const orangeCircle = document.querySelector('.orange-circle');
-const titles = document.querySelector('.titles');
+const homeTitles = document.querySelector('.home-titles');
+const nameRole = document.querySelector('.name-role')
 
 function enlarge() {
   blueCircle.style.width = '550px';
@@ -18,11 +19,11 @@ function shrink() {
   orangeCircle.style.height = '450px';
 }
 
-titles.addEventListener('mouseover', enlarge);
-titles.addEventListener('mouseover', enlarge);
+homeTitles.addEventListener('mouseover', enlarge);
+nameRole.addEventListener('mouseover', enlarge);
 
-titles.addEventListener('mouseleave', shrink);
-titles.addEventListener('mouseleave', shrink);
+homeTitles.addEventListener('mouseleave', shrink);
+nameRole.addEventListener('mouseleave', shrink);
 
 // Circles Disappearing
 
