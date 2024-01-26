@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 10vh;
+}
+
+.navbar-a {
+  color: #61CBDF;
+  font-family: 'Sometype Mono', monospace;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 48px;
+}
+
+span::before {
+  counter-increment: number;
+  content: "0" counter(number);
+  display: block;
+  text-align: right;
+  opacity: .75;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  counter-reset: number;
+}
+
+li {
+  float: left;
+  transition: all 0.25s ease;
+}
+
+ul:hover li {
+  opacity: 0.4;
+  filter: blur(1px);
+}
+
+ul li:hover {
+  opacity: 1;
+  filter: blur(0px);
+}
