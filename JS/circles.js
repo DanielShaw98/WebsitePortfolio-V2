@@ -1,3 +1,5 @@
+// Circles Growing & Shrinking
+
 const blueCircle = document.querySelector('.blue-circle');
 const orangeCircle = document.querySelector('.orange-circle');
 const titles = document.querySelector('.titles');
@@ -21,3 +23,17 @@ titles.addEventListener('mouseover', enlarge);
 
 titles.addEventListener('mouseleave', shrink);
 titles.addEventListener('mouseleave', shrink);
+
+// Circles Disappearing
+
+window.addEventListener('scroll', function() {
+  let yOffset = window.scrollY;
+  const cvPage = document.querySelector('.cv-page');
+
+  let opacity = 1 - yOffset / 50;
+
+  opacity = Math.max(0, Math.min(1, opacity));
+
+  blueCircle.style.opacity = opacity;
+  orangeCircle.style.opacity = opacity;
+});
