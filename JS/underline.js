@@ -3,20 +3,22 @@
 document.addEventListener('DOMContentLoaded', function () {
   const underlineCv = document.querySelector('.underline-cv');
 
-  function extend() {
-    underlineCv.style.transition = 'width 0.5s ease-in-out';
-    underlineCv.style.width = '350px';
+  function updateUnderline() {
+      const scrollPosition = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const percentage = (scrollPosition / maxScroll) * 100;
+
+      let newWidth = 10 + percentage;
+
+      const maxWidth = 95.5;
+      if (newWidth > maxWidth) {
+          newWidth = maxWidth;
+      }
+
+      underlineCv.style.width = `${newWidth}%`;
   }
 
-  function revert() {
-    underlineCv.style.transition = 'width 0.5s ease-in-out';
-    underlineCv.style.width = '300px';
-  }
-
-    setTimeout(function () {
-      extend();
-      setTimeout(revert, 500);
-    }, 250);
+  window.addEventListener('scroll', updateUnderline);
 });
 
 // Projects Underline

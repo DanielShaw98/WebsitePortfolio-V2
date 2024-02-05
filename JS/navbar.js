@@ -1,3 +1,5 @@
+// Load Navbar Partial
+
 $(document).ready(function () {
   $.ajax({
       url: 'navbar.html',
@@ -11,3 +13,5 @@ $(document).ready(function () {
       }
   });
 });
+
+// Load Navbar On Scroll
