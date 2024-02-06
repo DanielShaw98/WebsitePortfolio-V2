@@ -34,15 +34,37 @@ ul {
 
 li {
   float: left;
+}
+
+span {
+  float: left;
   transition: all 0.25s ease;
 }
 
-ul:hover li {
+ul:hover span {
   opacity: 0.4;
   filter: blur(1px);
 }
 
-ul li:hover {
+ul span:hover {
   opacity: 1;
   filter: blur(0px);
+}
+
+.projects-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #1A191D;
+  white-space: nowrap;
+}
+
+.projects-dropdown:hover .dropdown-content {
+  display: block;
 }

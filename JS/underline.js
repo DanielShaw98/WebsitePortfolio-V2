@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const underlineCv = document.querySelector('.underline-cv');
   const underlineSupperclub = document.querySelector('.underline-supperclub');
   const underlineVloyal = document.querySelector('.underline-vloyal');
+  const underlineContact = document.querySelector('.underline-contact');
 
   function updateUnderline() {
       const scrollPosition = window.scrollY;
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // CV Underline
 
-      let cvWidth = percentage;
+      let cvWidth = percentage + 5;
       const maxWidth = 95.5;
       if (cvWidth > maxWidth) {
           cvWidth = maxWidth;
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // SupperClub Underline
 
-      let supperclubWidth = percentage - 85;
+      let supperclubWidth = percentage - 65;
       if (supperclubWidth > maxWidth) {
         supperclubWidth = maxWidth;
       }
@@ -29,33 +30,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Vloyal Underline
 
-      let vloyalWidth = percentage - 200;
+      let vloyalWidth = percentage - 165;
       if (vloyalWidth > maxWidth) {
         vloyalWidth = maxWidth;
       }
       underlineVloyal.style.width = `${vloyalWidth}%`;
+
+      // Contact Underline
+
+      let contactWidth = percentage - 320;
+      if (contactWidth > maxWidth) {
+        contactWidth = maxWidth;
+      }
+      underlineContact.style.width = `${contactWidth}%`;
   }
 
   window.addEventListener('scroll', updateUnderline);
-});
-
-// Contact Underline
-
-document.addEventListener('DOMContentLoaded', function () {
-  const underlineContact = document.querySelector('.underline-contact');
-
-  function extend() {
-    underlineContact.style.transition = 'width 0.5s ease-in-out';
-    underlineContact.style.width = '610px';
-  }
-
-  function revert() {
-    underlineContact.style.transition = 'width 0.5s ease-in-out';
-    underlineContact.style.width = '560px';
-  }
-
-    setTimeout(function () {
-      extend();
-      setTimeout(revert, 500);
-    }, 250);
 });

@@ -198,3 +198,58 @@ iframe {
   overflow-y: auto;
   padding: 0 100px;
 }
+
+/* Contact CSS */
+
+.contact-page {
+  position: relative;
+  padding: 3.5% 0;
+}
+
+.contact-page h3 {
+  color: #FFF;
+  font-family: "JetBrains Mono";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-top: 32px;
+}
+
+.contact-page h5 {
+  color: #FFF;
+  font-family: "JetBrains Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-top: 32px;
+}
+
+.contact-page h6 {
+  color: #FFF;
+  font-family: "JetBrains Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.contact-container {
+  padding-left: 100px;
+}
+
+.email, .linkedin, .github {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 16px;
+  padding: 16px 0;
+}
+
+.github-image {
+  margin-left: -5px;
+}

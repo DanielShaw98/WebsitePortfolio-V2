@@ -42,15 +42,38 @@
 
 #navbar-container li {
   float: left;
+}
+
+#navbar-container span {
+  float: left;
   transition: all 0.25s ease;
 }
 
-#navbar-container ul:hover li {
+#navbar-container ul:hover span {
   opacity: 0.4;
   filter: blur(1px);
 }
 
-#navbar-container ul li:hover {
+#navbar-container ul span:hover {
   opacity: 1;
   filter: blur(0px);
+}
+
+#navbar-container .projects-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+#navbar-container .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #252428;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+#navbar-container .projects-dropdown:hover .dropdown-content {
+  display: block;
 }

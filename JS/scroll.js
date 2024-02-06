@@ -2,6 +2,7 @@
 
 const body = document.querySelector('body');
 const navbar = document.getElementById('navbar-container');
+const dropdown = document.querySelector('.dropdown-content');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 0 && window.scrollY < 700) {

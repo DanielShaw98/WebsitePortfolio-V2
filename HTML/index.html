@@ -19,26 +19,37 @@
 <body>
 
 
-  <div class="home-page">
+  <div class="home-page" id="home">
     <div class="navbar">
       <ul>
         <li>
-          <a class="navbar-a" href="home.html">
+          <a class="navbar-a" href="#home">
             <span>// home</span>
           </a>
         </li>
         <li>
-          <a class="navbar-a" href="cv.html">
+          <a class="navbar-a" href="#cv">
             <span>// cv</span>
           </a>
         </li>
         <li>
-          <a class="navbar-a" href="projects.html">
-            <span>// projects</span>
-          </a>
+          <div class="projects-dropdown">
+            <a class="navbar-a" href="#projects">
+              <span>// projects</span>
+            </a>
+            <div class="dropdown-content">
+              <a class="navbar-a" href="#supperclub">
+                <span>// supperclub</span>
+              </a>
+              <br>
+              <a class="navbar-a" href="#vloyal">
+                <span>// vloyal</span>
+              </a>
+            </div>
+          </div>
         </li>
         <li>
-          <a class="navbar-a" href="contact.html">
+          <a class="navbar-a" href="#contact">
             <span>// contact</span>
           </a>
         </li>
@@ -58,7 +69,7 @@
   <div id="navbar-container" class="hidden show"></div>
 
 
-  <div class="cv-page">
+  <div class="cv-page" id="cv">
     <div class="titles">
       <h1>My CV</h1>
       <div class="underline underline-cv"></div>
@@ -90,7 +101,7 @@
     </div>
   </div>
 
-
+  <div class="projects" id="projects"></div>
   <div class="supperclub-page">
     <div class="titles">
       <h1>SupperClub</h1>
@@ -164,6 +175,36 @@
         <img class="screenshot" src="../Images/Vloyal Screenshots/vloyal-map-page-portrait.png" alt="Vloyal Map Page">
         <img class="screenshot" src="../Images/Vloyal Screenshots/vloyal-rewards-page-1-portrait.png" alt="Vloyal Rewards Page 1">
         <img class="screenshot" src="../Images/Vloyal Screenshots/vloyal-rewards-page-2-portrait.png" alt="loyal Rewards Page 2">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="contact-page" id="contact">
+    <div class="titles">
+      <h1>Contact Me</h1>
+      <div class="underline underline-contact"></div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-text">
+        <h3>Available for work and freelance opportunities.</h3>
+        <h5>Have a job opportunity for me?<br>
+          Have an exciting project you need help with?<br>
+          Send me an email or contact me via LinkedIn!</h5>
+      </div>
+      <div class="contact-info">
+        <div class="email">
+          <img src="../Images/Icons/Envelope Light Blue.svg" alt="Envelope Light Blue">
+          <h6>danielshaw71@gmail.com</h6>
+        </div>
+        <div class="linkedin">
+          <img src="../Images/Icons/LinkedIn Light Blue.svg" alt="LinkedIn Light Blue">
+          <h6>https://www.linkedin.com/in/daniel-shaw-ds98/</h6>
+        </div>
+        <div class="github">
+          <img class="github-image" src="../Images/Icons/Github Light Blue.svg" alt="Github Light Blue">
+          <h6>https://github.com/DanielShaw98</h6>
+        </div>
       </div>
     </div>
   </div>
