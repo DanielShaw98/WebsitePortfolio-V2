@@ -63,6 +63,7 @@ ul span:hover {
   width: 100%;
   background-color: #1A191D;
   white-space: nowrap;
+  max-width: 15%;
 }
 
 .projects-dropdown:hover .dropdown-content {

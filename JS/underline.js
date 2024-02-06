@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // CV Underline
 
-      let cvWidth = percentage + 5;
+      let cvWidth = percentage;
       const maxWidth = 95.5;
       if (cvWidth > maxWidth) {
           cvWidth = maxWidth;
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // SupperClub Underline
 
-      let supperclubWidth = percentage - 65;
+      let supperclubWidth = percentage - 70;
       if (supperclubWidth > maxWidth) {
         supperclubWidth = maxWidth;
       }
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Vloyal Underline
 
-      let vloyalWidth = percentage - 165;
+      let vloyalWidth = percentage - 175;
       if (vloyalWidth > maxWidth) {
         vloyalWidth = maxWidth;
       }

@@ -40,6 +40,7 @@ body {
 
 .cv-page {
   position: relative;
+  padding-top: 10vh;
 }
 
 .titles h1 {
@@ -103,16 +104,20 @@ iframe {
 .cv-right {
   position: absolute;
   left: 32%;
-  top: 24%;
+  top: 30%;
   width: 64%;
   height: 100%;
+}
+
+.cv-spacer {
+  margin: 20% 0;
 }
 
 /* SupperClub CSS */
 
 .supperclub-page {
   position: relative;
-  padding-top: 20%;
+  padding-top: 10vh;
 }
 
 .text-left {
@@ -174,6 +179,7 @@ iframe {
 
 .vloyal-page {
   position: relative;
+  padding-top: 10vh;
 }
 
 .vloyal-page .screenshot {
