@@ -3,11 +3,12 @@
 document.addEventListener('DOMContentLoaded', function () {
   const underlineCv = document.querySelector('.underline-cv');
   const underlineSupperclub = document.querySelector('.underline-supperclub');
+  const underlineVloyal = document.querySelector('.underline-vloyal');
 
   function updateUnderline() {
       const scrollPosition = window.scrollY;
       const maxScroll = document.body.scrollHeight - window.innerHeight;
-      const percentage = (scrollPosition / maxScroll) * 200;
+      const percentage = (scrollPosition / maxScroll) * 400;
 
       // CV Underline
 
@@ -20,35 +21,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // SupperClub Underline
 
-      let supperclubWidth = percentage - 80;
+      let supperclubWidth = percentage - 85;
       if (supperclubWidth > maxWidth) {
         supperclubWidth = maxWidth;
       }
       underlineSupperclub.style.width = `${supperclubWidth}%`;
+
+      // Vloyal Underline
+
+      let vloyalWidth = percentage - 200;
+      if (vloyalWidth > maxWidth) {
+        vloyalWidth = maxWidth;
+      }
+      underlineVloyal.style.width = `${vloyalWidth}%`;
   }
 
   window.addEventListener('scroll', updateUnderline);
-});
-
-// Vloyal Underline
-
-document.addEventListener('DOMContentLoaded', function () {
-  const underlineVloyal = document.querySelector('.underline-vloyal');
-
-  function extend() {
-    underlineVloyal.style.transition = 'width 0.5s ease-in-out';
-    underlineVloyal.style.width = '350px';
-  }
-
-  function revert() {
-    underlineVloyal.style.transition = 'width 0.5s ease-in-out';
-    underlineVloyal.style.width = '300px';
-  }
-
-    setTimeout(function () {
-      extend();
-      setTimeout(revert, 500);
-    }, 250);
 });
 
 // Contact Underline
