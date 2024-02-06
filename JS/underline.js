@@ -1,67 +1,33 @@
-// CV Underline
+// Underline Extension
 
 document.addEventListener('DOMContentLoaded', function () {
   const underlineCv = document.querySelector('.underline-cv');
+  const underlineSupperclub = document.querySelector('.underline-supperclub');
 
   function updateUnderline() {
       const scrollPosition = window.scrollY;
       const maxScroll = document.body.scrollHeight - window.innerHeight;
-      const percentage = (scrollPosition / maxScroll) * 100;
+      const percentage = (scrollPosition / maxScroll) * 200;
 
-      let newWidth = 10 + percentage;
+      // CV Underline
 
+      let cvWidth = percentage;
       const maxWidth = 95.5;
-      if (newWidth > maxWidth) {
-          newWidth = maxWidth;
+      if (cvWidth > maxWidth) {
+          cvWidth = maxWidth;
       }
+      underlineCv.style.width = `${cvWidth}%`;
 
-      underlineCv.style.width = `${newWidth}%`;
+      // SupperClub Underline
+
+      let supperclubWidth = percentage - 80;
+      if (supperclubWidth > maxWidth) {
+        supperclubWidth = maxWidth;
+      }
+      underlineSupperclub.style.width = `${supperclubWidth}%`;
   }
 
   window.addEventListener('scroll', updateUnderline);
-});
-
-// Projects Underline
-
-document.addEventListener('DOMContentLoaded', function () {
-  const underlineProjects = document.querySelector('.underline-projects');
-
-  function extend() {
-    underlineProjects.style.transition = 'width 0.5s ease-in-out';
-    underlineProjects.style.width = '600px';
-  }
-
-  function revert() {
-    underlineProjects.style.transition = 'width 0.5s ease-in-out';
-    underlineProjects.style.width = '550px';
-  }
-
-    setTimeout(function () {
-      extend();
-      setTimeout(revert, 500);
-    }, 250);
-});
-
-
-// SupperClub Underline
-
-document.addEventListener('DOMContentLoaded', function () {
-  const underlineSupperclub = document.querySelector('.underline-supperclub');
-
-  function extend() {
-    underlineSupperclub.style.transition = 'width 0.5s ease-in-out';
-    underlineSupperclub.style.width = '625px';
-  }
-
-  function revert() {
-    underlineSupperclub.style.transition = 'width 0.5s ease-in-out';
-    underlineSupperclub.style.width = '575px';
-  }
-
-    setTimeout(function () {
-      extend();
-      setTimeout(revert, 500);
-    }, 250);
 });
 
 // Vloyal Underline
