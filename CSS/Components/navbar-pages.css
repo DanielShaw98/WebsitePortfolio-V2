@@ -26,7 +26,7 @@
   padding-right: 48px;
 }
 
-#navbar-container span::before {
+#navbar-container .counter::before {
   counter-increment: number;
   content: "0" counter(number);
   display: block;

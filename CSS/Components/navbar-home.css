@@ -6,7 +6,7 @@
   padding-right: 17.5%;
 }
 
-a {
+.navbar-a {
   color: #FFF;
   font-family: 'Sometype Mono', monospace;
   font-size: 28px;
@@ -18,7 +18,7 @@ a {
   padding-right: 48px;
 }
 
-span::before {
+.counter::before {
   counter-increment: number;
   content: "0" counter(number);
   display: block;

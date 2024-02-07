@@ -13,6 +13,7 @@
   <script src="../JS/navbar.js" defer></script>
   <script src="../JS/underline.js" defer></script>
   <script src="../JS/scroll.js" defer></script>
+  <script src="../JS/clipboard.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <title>Daniel Shaw Portfolio</title>
 </head>
@@ -24,33 +25,33 @@
       <ul>
         <li>
           <a class="navbar-a" href="#home">
-            <span>// home</span>
+            <span class="counter">// home</span>
           </a>
         </li>
         <li>
           <a class="navbar-a" href="#cv">
-            <span>// cv</span>
+            <span class="counter">// cv</span>
           </a>
         </li>
         <li>
           <div class="projects-dropdown">
             <a class="navbar-a" href="#supperclub">
-              <span>// projects</span>
+              <span class="counter">// projects</span>
             </a>
             <div class="dropdown-content">
               <a class="navbar-a" href="#supperclub">
-                <span>// supperclub</span>
+                <span class="counter">// supperclub</span>
               </a>
               <br>
               <a class="navbar-a" href="#vloyal">
-                <span>// vloyal</span>
+                <span class="counter">// vloyal</span>
               </a>
             </div>
           </div>
         </li>
         <li>
           <a class="navbar-a" href="#contact">
-            <span>// contact</span>
+            <span class="counter">// contact</span>
           </a>
         </li>
       </ul>
@@ -195,16 +196,20 @@
       </div>
       <div class="contact-info">
         <div class="email">
-          <img src="../Images/Icons/Envelope Light Blue.svg" alt="Envelope Light Blue">
-          <h6>danielshaw71@gmail.com</h6>
+          <a class="link" href="#" onclick="copyToClipboard()"><img src="../Images/Icons/Envelope Light Blue.svg" alt="Envelope Light Blue">
+          <div class="tooltip">
+            <h6 id="myEmail">danielshaw71@gmail.com</h6>
+            <span class="tooltiptext">Copy To Clipboard</span>
+          </div>
+          </a>
         </div>
         <div class="linkedin">
-          <img src="../Images/Icons/LinkedIn Light Blue.svg" alt="LinkedIn Light Blue">
-          <h6>https://www.linkedin.com/in/daniel-shaw-ds98/</h6>
+          <a class="link" href="https://www.linkedin.com/in/daniel-shaw-ds98/"><img src="../Images/Icons/LinkedIn Light Blue.svg" alt="LinkedIn Light Blue">
+          <h6>https://www.linkedin.com/in/daniel-shaw-ds98/</h6></a>
         </div>
         <div class="github">
-          <img class="github-image" src="../Images/Icons/Github Light Blue.svg" alt="Github Light Blue">
-          <h6>https://github.com/DanielShaw98</h6>
+          <a class="link" href="https://github.com/DanielShaw98"><img class="github-image" src="../Images/Icons/Github Light Blue.svg" alt="Github Light Blue">
+          <h6>https://github.com/DanielShaw98</h6></a>
         </div>
       </div>
     </div>

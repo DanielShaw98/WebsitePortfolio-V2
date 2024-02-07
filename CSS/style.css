@@ -170,7 +170,7 @@ iframe {
   position: sticky;
   top: 5%;
   width: 28%;
-  height: 100vh;
+  height: 80vh;
   overflow-y: auto;
   padding: 0 100px;
 }
@@ -200,7 +200,7 @@ iframe {
   position: sticky;
   top: 5%;
   width: 30%;
-  height: 100vh;
+  height: 80vh;
   overflow-y: auto;
   padding: 0 100px;
 }
@@ -242,20 +242,62 @@ iframe {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  transition: color 0.25s ease-in-out;
 }
 
 .contact-container {
   padding-left: 100px;
 }
 
-.email, .linkedin, .github {
+.github-image {
+  margin-left: -5px;
+}
+
+.link {
   display: flex;
-  flex-wrap: wrap;
+  flex: wrap;
   align-items: center;
+  text-decoration: none;
   column-gap: 16px;
   padding: 16px 0;
 }
 
-.github-image {
-  margin-left: -5px;
+.email {
+  padding-top: 16px;
+}
+
+.link h6:hover {
+  color: #F9812A;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  width: 200px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  background-color: #252428;
+  color: #FFF;
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
