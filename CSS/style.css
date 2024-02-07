@@ -255,11 +255,15 @@ iframe {
 
 .link {
   display: flex;
-  flex: wrap;
+  flex: 0 0 auto;;
   align-items: center;
   text-decoration: none;
   column-gap: 16px;
   padding: 16px 0;
+}
+
+.email, .linkedin, .github {
+  display: flex;
 }
 
 .email {
