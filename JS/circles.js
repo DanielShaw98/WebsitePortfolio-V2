@@ -6,17 +6,17 @@ const homeTitles = document.querySelector('.home-titles');
 const nameRole = document.querySelector('.name-role')
 
 function enlarge() {
-  blueCircle.style.width = '550px';
-  blueCircle.style.height = '550px';
-  orangeCircle.style.width = '550px';
-  orangeCircle.style.height = '550px';
+  blueCircle.style.width = '500px';
+  blueCircle.style.height = '500px';
+  orangeCircle.style.width = '500px';
+  orangeCircle.style.height = '500px';
 }
 
 function shrink() {
-  blueCircle.style.width = '450px';
-  blueCircle.style.height = '450px';
-  orangeCircle.style.width = '450px';
-  orangeCircle.style.height = '450px';
+  blueCircle.style.width = '400px';
+  blueCircle.style.height = '400px';
+  orangeCircle.style.width = '400px';
+  orangeCircle.style.height = '400px';
 }
 
 homeTitles.addEventListener('mouseover', enlarge);

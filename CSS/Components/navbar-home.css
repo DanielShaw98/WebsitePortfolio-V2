@@ -1,9 +1,8 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   height: 10vh;
-  padding-right: 17.5%;
 }
 
 .navbar-a {
@@ -68,4 +67,36 @@ ul span:hover {
 
 .projects-dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Media Queries */
+
+/* Min Width 576px */
+
+@media (min-width: 576px) {
+
+}
+
+/* Min Width 768px */
+
+@media (min-width: 768px) {
+
+}
+
+/* Min Width 992px */
+
+@media (min-width: 992px) {
+
+}
+
+/* Min Width 1200px */
+
+@media (min-width: 1200px) {
+
+}
+
+/* Min Width 1400px */
+
+@media (min-width: 1400px) {
+
 }
