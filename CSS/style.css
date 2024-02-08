@@ -377,11 +377,21 @@ iframe {
 @media (min-width: 992px) {
   body {
     width: 100%;
-    background-color: yellow;
+    background-color: pink;
   }
 
-  .technology {
-    font-size: 40px;
+  .titles {
+    padding-left: 4%;
+  }
+
+  .titles h1 {
+    font-size: 72px;
+  }
+
+  .head-shot-positioning {
+    padding-left: 8%;
+    padding-top: 2%;
+    width: 26%;
   }
 
   .head-shot {
@@ -391,13 +401,22 @@ iframe {
     box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
   }
 
+  .technology {
+    font-size: 40px;
+  }
+
+  .technology-left {
+    padding-left: 4%;
+    padding-top: 2%;
+  }
+
   .tag {
     height: 40px;
   }
 
   .cv-right {
     left: 34%;
-    top: 38%;
+    top: 32%;
     width: 62%;
     height: 70%;
   }
@@ -413,8 +432,19 @@ iframe {
   .supperclub-page .container-left {
     position: relative;
     height: 100%;
-    width: 19%;
+    width: 24%;
     overflow-y: hidden;
+    padding: 0 4%;
+  }
+
+  .supperclub-page .screenshots-right {
+    width: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .supperclub-page .screenshot {
@@ -424,14 +454,33 @@ iframe {
 
   .vloyal-page .container-left {
     position: sticky;
-    width: 19%;
+    width: 24%;
     height: 100%;
     overflow-y: auto;
+    padding: 0 4%;
+  }
+
+  .vloyal-page .screenshots-right {
+    width: 70%;
+    padding: 3% 2% 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 6%;
+    row-gap: 16px;
   }
 
   .vloyal-page .screenshot {
     width: 190px;
     height: 383px;
+  }
+
+  .contact-page {
+    padding: 8% 0;
+  }
+
+  .contact-container {
+    padding-left: 4%;
   }
 }
 
@@ -445,6 +494,10 @@ iframe {
 
   .titles {
     padding-left: 4%;
+  }
+
+  .titles h1 {
+    font-size: 96px;
   }
 
   .head-shot-positioning {
@@ -511,16 +564,6 @@ iframe {
     overflow-y: hidden;
   }
 
-  .supperclub-page .screenshots-right {
-    width: 70%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .supperclub-page .screenshot {
     width: 341px;
     height: 220px;
@@ -532,16 +575,6 @@ iframe {
     height: 80vh;
     overflow-y: auto;
     padding: 0 4%;
-  }
-
-  .vloyal-page .screenshots-right {
-    width: 70%;
-    padding: 3% 2% 0 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 6%;
-    row-gap: 16px;
   }
 
   .vloyal-page .screenshot {
@@ -566,16 +599,6 @@ iframe {
     background-color: purple;
   }
 
-  /* .titles {
-    padding-left: 4%;
-  } */
-
-  /* .head-shot-positioning {
-    padding-left: 8%;
-    padding-top: 2%;
-    width: 26%;
-  } */
-
   .head-shot {
     height: 200px;
     width: 200px;
@@ -586,11 +609,6 @@ iframe {
   .technology {
     font-size: 58px;
   }
-
-  /* .technology-left {
-    padding-left: 4%;
-    padding-top: 2%;
-  } */
 
   .text-left h3 {
     font-size: 64px;
@@ -607,55 +625,15 @@ iframe {
     margin: 22% 0;
   }
 
-  /* .supperclub-page .container-left {
-    position: sticky;
-    height: 80vh;
-    width: 28%;
-    overflow-y: auto;
-    padding: 0 4%;
-  } */
-
-  /* .supperclub-page .screenshots-right {
-    width: 70%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  } */
-
   .supperclub-page .screenshot {
     width: 415px;
     height: 268px;
   }
 
-  /* .vloyal-page .container-left {
-    position: sticky;
-    width: 30%;
-    height: 80vh;
-    overflow-y: auto;
-    padding: 0 4%;
-  } */
-
-  /* .vloyal-page .screenshots-right {
-    width: 70%;
-    padding: 3% 2% 0 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 6%;
-    row-gap: 16px;
-  } */
-
   .vloyal-page .screenshot {
     width: 230px;
     height: 464px;
   }
-
-  /* .contact-container {
-    padding-left: 4%;
-  } */
 }
 
 /* Min Width 1500px */
