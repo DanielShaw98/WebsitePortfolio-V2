@@ -4,6 +4,12 @@
   background: #F9812A;
 }
 
+@media (min-width: 768px) {
+  .underline {
+    height: 6px;
+  }
+}
+
 @media (min-width: 992px) {
   .underline {
     height: 8px;
