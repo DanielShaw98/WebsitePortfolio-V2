@@ -1,8 +1,10 @@
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
+  z-index: 1;
 }
 
 .navbar-a {
@@ -74,29 +76,57 @@ ul span:hover {
 /* Min Width 576px */
 
 @media (min-width: 576px) {
+  .dropdown-content {
+    max-width: 28%;
+  }
 
+  .navbar-a {
+    font-size: 20px;
+    padding-right: 32px;
+  }
 }
 
 /* Min Width 768px */
 
 @media (min-width: 768px) {
+  .dropdown-content {
+    max-width: 30%;
+  }
 
+  .navbar-a {
+    font-size: 28px;
+    padding-right: 48px;
+  }
 }
 
 /* Min Width 992px */
 
 @media (min-width: 992px) {
-
+  .dropdown-content {
+    max-width: 23%;
+  }
 }
 
 /* Min Width 1200px */
 
 @media (min-width: 1200px) {
-
+  .dropdown-content {
+    max-width: 19%;
+  }
 }
 
 /* Min Width 1400px */
 
 @media (min-width: 1400px) {
+  .dropdown-content {
+    max-width: 16.5%;
+  }
+}
 
+/* Min Width 1500px */
+
+@media (min-width: 1500px) {
+  #navbar-container .dropdown-content {
+    max-width: 15%;
+  }
 }

@@ -5,7 +5,14 @@
 @media (min-width: 576px) {
   body {
     width: 100%;
-    background-color: red;
+  }
+
+  .name-role h1 {
+    font-size: 48px;
+  }
+
+  .name-role h3 {
+    font-size: 24px;
   }
 
   .titles {
@@ -156,7 +163,14 @@
 @media (min-width: 768px) {
   body {
     width: 100%;
-    background-color: orange;
+  }
+
+  .name-role h1 {
+    font-size: 64px;
+  }
+
+  .name-role h3 {
+    font-size: 32px;
   }
 
   .titles h1 {
@@ -233,7 +247,6 @@
 @media (min-width: 992px) {
   body {
     width: 100%;
-    background-color: pink;
   }
 
   .titles {
@@ -347,7 +360,6 @@
 @media (min-width: 1200px) {
   body {
     width: 100%;
-    background-color: green;
   }
 
   .titles {
@@ -454,7 +466,6 @@
 @media (min-width: 1400px) {
   body {
     width: 100%;
-    background-color: purple;
   }
 
   .head-shot {
@@ -499,7 +510,6 @@
 @media (min-width: 1500px) {
   body {
     width: 100%;
-    background-color: blue;
   }
 
   .titles {

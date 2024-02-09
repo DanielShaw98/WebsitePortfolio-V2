@@ -4,12 +4,14 @@ body {
   margin: 0;
   overflow-x: hidden;
   transition: background-color 1s ease-in-out;
-  /* background-color: #1A191D; */
+  background-color: #1A191D;
 }
 
 /* Home CSS */
 
 .home-titles {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;

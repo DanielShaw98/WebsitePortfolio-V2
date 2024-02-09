@@ -83,29 +83,57 @@
 /* Min Width 576px */
 
 @media (min-width: 576px) {
+  #navbar-container .dropdown-content {
+    max-width: 28%;
+  }
 
+  #navbar-container .navbar-a {
+    font-size: 20px;
+    padding-right: 32px;
+  }
 }
 
 /* Min Width 768px */
 
 @media (min-width: 768px) {
+  #navbar-container .dropdown-content {
+    max-width: 30%;
+  }
 
+  #navbar-container .navbar-a {
+    font-size: 28px;
+    padding-right: 48px;
+  }
 }
 
 /* Min Width 992px */
 
 @media (min-width: 992px) {
-
+  #navbar-container .dropdown-content {
+    max-width: 23%;
+  }
 }
 
 /* Min Width 1200px */
 
 @media (min-width: 1200px) {
-
+  #navbar-container .dropdown-content {
+    max-width: 19%;
+  }
 }
 
 /* Min Width 1400px */
 
 @media (min-width: 1400px) {
+  #navbar-container .dropdown-content {
+    max-width: 16.5%;
+  }
+}
 
+/* Min Width 1500px */
+
+@media (min-width: 1500px) {
+  #navbar-container .dropdown-content {
+    max-width: 15%;
+  }
 }
