@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   $.ajax({
-      url: 'navbar.html',
+      url: 'HTML/navbar.html',
       type: 'GET',
       dataType: 'html',
       success: function (data) {
