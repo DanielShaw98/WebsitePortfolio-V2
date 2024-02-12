@@ -73,6 +73,23 @@ ul span:hover {
 
 /* Media Queries */
 
+/* Min Width 400px */
+
+@media (min-width: 400px) {
+  .dropdown-content {
+    max-width: 32%;
+  }
+
+  .navbar-a {
+    font-size: 20px;
+    padding-right: 32px;
+  }
+
+  .navbar {
+    margin-top: 6%;
+  }
+}
+
 /* Min Width 576px */
 
 @media (min-width: 576px) {
@@ -83,6 +100,10 @@ ul span:hover {
   .navbar-a {
     font-size: 20px;
     padding-right: 32px;
+  }
+
+  .navbar {
+    margin-top: 0;
   }
 }
 
