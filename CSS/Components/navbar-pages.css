@@ -112,6 +112,7 @@
 
   #navbar-container .navbar {
     margin-top: 0;
+    height: 10vh;
   }
 }
 
