@@ -80,6 +80,24 @@
 
 /* Media Queries */
 
+/* Min Width 350px */
+
+@media (min-width: 350px) {
+  #navbar-container .dropdown-content {
+    max-width: 32%;
+  }
+
+  #navbar-container .navbar-a {
+    font-size: 20px;
+    padding-right: 32px;
+  }
+
+  #navbar-container .navbar {
+    margin-top: 8%;
+    height: 14vh;
+  }
+}
+
 /* Min Width 400px */
 
 @media (min-width: 400px) {

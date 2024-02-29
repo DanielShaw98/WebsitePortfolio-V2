@@ -4,17 +4,33 @@
   background: #F9812A;
 }
 
+/* Media Queries */
+
+/* Min Width 350px */
+
+@media (min-width: 350px) {
+  .underline {
+    height: 4px;
+  }
+}
+
+/* Min Width 400px */
+
 @media (min-width: 400px) {
   .underline {
     height: 5px;
   }
 }
 
+/* Min Width 576px */
+
 @media (min-width: 576px) {
   .underline {
     height: 6px;
   }
 }
+
+/* Min Width 992px */
 
 @media (min-width: 992px) {
   .underline {
