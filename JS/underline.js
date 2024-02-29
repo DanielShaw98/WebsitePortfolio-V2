@@ -20,21 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       underlineCv.style.width = `${cvWidth}%`;
 
-      // SupperClub Underline
-
-      let supperclubWidth = percentage - 70;
-      if (supperclubWidth > maxWidth) {
-        supperclubWidth = maxWidth;
-      }
-      underlineSupperclub.style.width = `${supperclubWidth}%`;
-
       // Vloyal Underline
 
-      let vloyalWidth = percentage - 175;
+      let vloyalWidth = percentage - 90;
       if (vloyalWidth > maxWidth) {
         vloyalWidth = maxWidth;
       }
       underlineVloyal.style.width = `${vloyalWidth}%`;
+
+      // SupperClub Underline
+
+      let supperclubWidth = percentage - 235;
+      if (supperclubWidth > maxWidth) {
+        supperclubWidth = maxWidth;
+      }
+      underlineSupperclub.style.width = `${supperclubWidth}%`;
 
       // Contact Underline
 

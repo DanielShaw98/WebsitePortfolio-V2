@@ -115,6 +115,36 @@ iframe {
   margin: 20% 0;
 }
 
+/* Vloyal CSS */
+
+.vloyal-page {
+  position: relative;
+  padding-top: 10vh;
+}
+
+.vloyal-page .screenshot {
+  width: 240px;
+  height: 485px;
+}
+
+.vloyal-page .screenshots-right {
+  width: 70%;
+  padding: 3% 2% 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6%;
+  row-gap: 16px;
+}
+
+.vloyal-page .container-left {
+  position: sticky;
+  top: 5%;
+  width: 30%;
+  height: 80vh;
+  overflow-y: auto;
+  padding: 0 6%;
+}
+
 /* SupperClub CSS */
 
 .supperclub-page {
@@ -172,36 +202,6 @@ iframe {
   position: sticky;
   top: 5%;
   width: 28%;
-  height: 80vh;
-  overflow-y: auto;
-  padding: 0 6%;
-}
-
-/* Vloyal CSS */
-
-.vloyal-page {
-  position: relative;
-  padding-top: 10vh;
-}
-
-.vloyal-page .screenshot {
-  width: 240px;
-  height: 485px;
-}
-
-.vloyal-page .screenshots-right {
-  width: 70%;
-  padding: 3% 2% 0 2%;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 6%;
-  row-gap: 16px;
-}
-
-.vloyal-page .container-left {
-  position: sticky;
-  top: 5%;
-  width: 30%;
   height: 80vh;
   overflow-y: auto;
   padding: 0 6%;
