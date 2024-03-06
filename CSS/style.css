@@ -21,7 +21,7 @@ body {
 }
 
 .name-role h1 {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: 'JetBrains Mono', monospace;
   font-size: 64px;
   font-style: normal;
@@ -30,7 +30,7 @@ body {
 }
 
 .name-role h3 {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: 'JetBrains Mono', monospace;
   font-size: 32px;
   font-style: normal;
@@ -78,7 +78,7 @@ body {
 }
 
 .technology {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 58px;
   font-style: normal;
@@ -157,7 +157,7 @@ iframe {
 }
 
 .text-left h3 {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 64px;
   font-style: normal;
@@ -168,7 +168,7 @@ iframe {
 }
 
 .text-left p {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 16px;
   font-style: normal;
@@ -215,7 +215,7 @@ iframe {
 }
 
 .contact-page h3 {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 32px;
   font-style: normal;
@@ -226,7 +226,7 @@ iframe {
 }
 
 .contact-page h5 {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 24px;
   font-style: normal;
@@ -237,7 +237,7 @@ iframe {
 }
 
 .contact-page h6 {
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 24px;
   font-style: normal;
@@ -292,7 +292,7 @@ iframe {
   padding: 5px 0;
   border-radius: 6px;
   background-color: #252428;
-  color: #FFF;
+  color: #F9F9F9;
   font-family: "JetBrains Mono";
   font-size: 16px;
   font-style: normal;
